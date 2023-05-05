@@ -11,3 +11,12 @@ Expected Output :
 [7, 9, 0]
 [7, 9, 0, -2]
 []*/
+function first(arr, n) {
+    if (n == null) {
+        return arr[0];
+    } else if (n < 0) {
+        return [];
+    } else {
+        return arr.slice(0, n);
+    }
+}
