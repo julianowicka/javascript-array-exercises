@@ -8,3 +8,14 @@ Expected Output :
 [9, 0, -2]
 [7, 9, 0, -2]*/
 
+function last(arr, n) {
+    if (n == null) {
+        return arr[arr.length - 1];
+    }
+    return arr.slice(Math.max(arr.length - n, 0));
+}
+
+//Conditional (ternary) operator
+function lastElement(arr, n) {
+    return n === undefined ? arr[arr.length - 1] : arr.slice(Math.max(arr.length - n, 0));
+}
