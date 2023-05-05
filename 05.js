@@ -4,3 +4,11 @@ Expected Output :
 "Red,Green,White,Black"
 "Red,Green,White,Black"
 "Red+Green+White+Black"*/
+
+let myColor = ["Red", "Green", "White", "Black"];
+
+let commaSeparated = myColor.join(",");
+console.log(commaSeparated);
+
+let plusSeparated = myColor.join("+");
+console.log(plusSeparated);
